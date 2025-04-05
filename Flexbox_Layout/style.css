@@ -1,0 +1,48 @@
+/* Default Style of Page */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Flexbox Container Style */
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: dodgerblue;
+    padding: 1rem;
+    min-height: 100vh;
+}
+
+/* Flexbox Item Style */
+.flex-item{
+    background-color: #f1f1f1;
+    padding: 1rem;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* Flexbox Second Container Style */
+.flex-container2{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 1rem;
+}
+
+/* Flexbox Second Container Item Style */
+.main{
+    flex: 3;
+}
+.aside{
+    flex: 1;
+}
+
+/* Flexbox Responsive Style */
+@media (max-width: 768px){
+    .flex-container2{
+        flex-direction: column;
+    }
+}
